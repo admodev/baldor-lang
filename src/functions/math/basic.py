@@ -10,7 +10,7 @@ def subtract(*args):
     result = 0
     curr = int(args[0])
     for n in args:
-        result = curr - int(args[+1])
+        result = curr - curr
     return result
 
 def multiply(*args):
@@ -20,8 +20,7 @@ def multiply(*args):
     return result
 
 def divide(*args):
-    result = 0
     curr = int(args[0])
     for n in range(len(args)):
-        result = curr / args[n]
-    return result
+        curr /= args[n]
+    return curr
